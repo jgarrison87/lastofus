@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 :root {
   --primary-color: #ffd500;
@@ -12,10 +12,10 @@
 }
 
 body {
-  font-family: "Pathway Gothic One", sans-serif;
+  font-family: "Shadows Into Light", cursive;
 }
 
-.text-secondary {
+.text-primary {
   color: var(--primary-color);
 }
 
@@ -25,6 +25,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background-color: #000;
 }
@@ -32,8 +34,11 @@ body {
 video {
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
   opacity: 0.9;
   z-index: -10;
 }
@@ -46,39 +51,48 @@ video {
   right: 50px;
 }
 
-.navbar {
-  color: var(--secondary-color);
+.navbar .navbar-nav a {
+  color: #fff;
+}
+
+.navbar .navbar-nav {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.navbar .navbar-toggler {
+  color: var(--primary-color);
+}
+
+.navbar-items {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
   height: 50px;
-  position: fixed;
-  z-index: 1;
-  margin-top: 20px;
 }
 
-.navbar .nav-items {
-  list-style: none;
+.navbar-items .navbar-nav {
+  margin-right: 50px;
+  width: 40%;
   display: flex;
   justify-content: space-around;
-  font-size: 1.2rem;
   font-weight: bolder;
-  width: 40%;
-  letter-spacing: 0.09rem;
-  cursor: pointer;
 }
 
-.navbar .nav-items:last-child {
-  margin-right: 100px;
+.nav-item a.nav-link {
+  color: var(--secondary-color);
 }
 
-.navbar .nav-items .item:hover {
+.nav-item a.tp {
   color: var(--primary-color);
+}
+
+.nav-item a.nav-link:hover {
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 section {
+  font-family: "Shadows Into Light", cursive;
   color: #fff;
   position: fixed;
   z-index: 1;
@@ -88,22 +102,22 @@ section {
   width: 20%;
 }
 
-section .title-container {
-  line-height: 0.8;
-}
-
 section .title-container .title {
-  font-size: 9rem;
-  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  font-stretch: narrower;
+  font-size: 5rem;
+  font-weight: 900;
 }
 
 section .title-container .part {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 section .title-container h3 {
   padding-top: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 section .title-container .btns {
@@ -145,4 +159,14 @@ section .title-container .btns .btn-outline:hover {
   color: #000;
   cursor: pointer;
   background-color: rgba(255, 213, 0, 0.4);
+}
+
+@media (max-width: 800px) {
+  section .title-container .title {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }

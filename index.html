@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Last of Us - Part 2</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="fullscreen-bg">
       <video
-        autoplay
         muted
+        autoplay
         loop
         id="trailer"
         src="./assets/vid/The Last of Us Part 2 - Official Story Trailer_Trim.mp4"
@@ -19,22 +25,63 @@
       <img src="./assets/img/rating.png" alt="rating" />
     </div>
 
-    <nav>
-      <div class="navbar">
-        <ul class="nav-items">
-          <li class="item">GAMES</li>
-          <li class="item">ABOUT</li>
-          <li class="item">MEDIA</li>
-          <li class="item">NEWS</li>
-          <li class="item">ACCESSIBILITY</li>
-          <li class="item"><span class="text-secondary">BUY NOW</span></li>
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-items collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              GAMES<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">THE LAST OF US: LEFT BEHIND</a>
+              <a class="dropdown-item" href="#">THE LAST OF US</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >ABOUT <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MEDIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ACCESSIBILITY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tp" href="#">BUY NOW</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <section>
       <div class="title-container">
-        <h1 class="title">THE LAST OF US</h1>
+        <h1 class="title">THE</h1>
+        <h1 class="title">LAST</h1>
+        <h1 class="title">OF US</h1>
         <h2 class="part">PART II</h2>
         <h3>AVAILABLE NOW</h3>
         <div class="btns">
@@ -43,7 +90,5 @@
         </div>
       </div>
     </section>
-
-    <script src="app.js"></script>
   </body>
 </html>
