@@ -110,7 +110,7 @@ section .title-container .btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 330px;
   margin-top: 20px;
 }
 
