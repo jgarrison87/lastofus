@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+
+:root {
+  --primary-color: #ffd500;
+  --secondary-color: #808080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.text-secondary {
+  color: var(--primary-color);
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -10;
+}
+
+.fullscreen-bg img {
+  height: 100px;
+  width: 75px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.navbar {
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.navbar .nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  width: 40%;
+  letter-spacing: 0.09rem;
+  cursor: pointer;
+}
+
+.navbar .nav-items:last-child {
+  margin-right: 100px;
+}
+
+.navbar .nav-items .item:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+section {
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 100px;
+  height: 70%;
+  width: 20%;
+}
+
+section .title-container {
+  line-height: 0.8;
+}
+
+section .title-container .title {
+  font-size: 9rem;
+  font-weight: bold;
+}
+
+section .title-container .part {
+  font-size: 6rem;
+}
+
+section .title-container h3 {
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+section .title-container .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  margin-top: 20px;
+}
+
+section .title-container .btns .btn-solid {
+  height: 50px;
+  width: 120px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+}
+
+section .title-container .btns .btn-outline {
+  height: 50px;
+  width: 180px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 5px;
+  border: 2px solid var(--primary-color);
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+}
+
+section .title-container .btns .btn-solid:hover,
+section .title-container .btns .btn-outline:hover {
+  cursor: pointer;
+}
